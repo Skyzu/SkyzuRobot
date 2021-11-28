@@ -29,7 +29,7 @@ async def repo(_, message):
     await message.reply_text(
         f"""✨ **Hey I'm Skyzu Robot** 
 
-**Owner repo : [sena-ex](https://t.me/excrybaby)**
+**Owner repo : [Skyzu](https://t.me/skyzu)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -41,9 +41,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/kennedy-ex/Skyzurobot"), 
+                        "Repo", url="https://github.com/Skyzu/SkyzuRobot"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/Skyzusupport")
+                        "Support", url="https://t.me/skyzusupport")
                 ]
             ]
         ),
