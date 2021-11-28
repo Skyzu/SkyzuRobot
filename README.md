@@ -25,10 +25,3 @@
 This Bot is Created by SkyzuProject, If your kanging this without fork at least give a credit to get a smile of my hard work. 
 - SkyzuRobot
 ```
-
-### Support
-<p>
-<a href="https://t.me/skyzu"> <img src="https://img.shields.io/badge/Skyzu-blue?&logo=telegram" alt="Skyzu on Telegram" /> </a><br>
-<a href="https://t.me/skyzusupport"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
-<a href="https://t.me/skyzusupport"> <img src="https://img.shields.io/badge/Update-Channel-blue?&logo=telegram" alt="Update Channel" /> </a><br>
-</p>
