@@ -69,7 +69,7 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "emiexrobot"
+         "value": "SkyzuRobot"
       },
 
       "BOT_ID": {
@@ -79,12 +79,12 @@
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "excrybaby"
+         "value": "skyzu"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "emikosupport"
+         "value": "skyzusupport"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
