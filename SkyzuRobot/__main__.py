@@ -84,32 +84,32 @@ PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
 ✪ I'm an anime theme bot designed to help manage your telegram group with a lot features.
-✪ Maintained by @excrybaby ✨
+✪ Maintained by @skyzu ✨
 ────────────────────────
 Hit the /help to see available command.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="Help & Command", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ​", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="About Skyzu", callback_data="Skyzu_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ​", callback_data="Skyzu_"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="ᴛʀʏ ɪɴʟɪɴᴇ​​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Source Code", url="https://github.com/kennedy-ex/Skyzurobot"
+            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Skyzu/SkyzuRobot"
         ),
         InlineKeyboardButton(
-            text="Support Chat", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Skyzu To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="➗ ᴀᴅᴅ sᴋʏᴢᴜ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ➗", url="t.me/SkyzuRobot?startgroup=new"),
     ],
 ]
 
@@ -117,10 +117,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/5ff1cb39902809148f07f.jpg"
+EMI_IMG = "https://telegra.ph/file/56811b69cbcece20bbebf.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @excrybaby \
+ You can support the project by contacting @skyzu \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -381,18 +381,18 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="Skyzu_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="Skyzu_notes"),
+                    InlineKeyboardButton(text="ᴀᴅᴍɪɴs​", callback_data="Skyzu_admin"),
+                    InlineKeyboardButton(text="ɴᴏᴛᴇs​", callback_data="Skyzu_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="Skyzu_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="Skyzu_credit"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", callback_data="Skyzu_support"),
+                    InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs​", callback_data="Skyzu_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Musicplayer", callback_data="source_"),
+                    InlineKeyboardButton(text="ᴍᴜsɪᴄᴘʟᴀʏᴇʀ​", callback_data="source_"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="Skyzu_back"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_back"),
                  ]
                 ]
             ),
@@ -425,7 +425,7 @@ def Skyzu_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="Skyzu_")]]
+                [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_")]]
             ),
         )
 
@@ -437,7 +437,7 @@ def Skyzu_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="Skyzu_")]]
+                [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_")]]
             ),
         )
     elif query.data == "Skyzu_support":
@@ -448,11 +448,11 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/Skyzusupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/skyzusupport"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/skyzuXproject"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="Skyzu_"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
                  
                  ]
                 ]
@@ -468,10 +468,10 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Sena", url="t.me/xxskfi"),
+                    InlineKeyboardButton(text="Skyzu", url="t.me/skyzu"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="Skyzu_"),
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
                  
                  ]
                 ]
@@ -498,7 +498,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="Skyzu_")
+                    InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_")
                  ]
                 ]
             ),
@@ -547,7 +547,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help & Command ❓",
+                            text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ​",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -568,7 +568,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="help_back")]]
             ),
         )
 
@@ -640,7 +640,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Go Back",
+                                text="ɢᴏ ʙᴀᴄᴋ​",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -715,7 +715,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="sᴇᴛᴛɪɴɢs​",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
