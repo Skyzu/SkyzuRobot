@@ -95,17 +95,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ​", callback_data="Skyzu_"),
-        InlineKeyboardButton(
-            text="ᴛʀʏ ɪɴʟɪɴᴇ​​​", switch_inline_query_current_chat=""
-        ),
     ],
     [
         InlineKeyboardButton(
             text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Skyzu/SkyzuRobot"
-        ),
-        InlineKeyboardButton(
-            text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"
-        ),
     ],
     [
         InlineKeyboardButton(
