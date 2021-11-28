@@ -1,5 +1,5 @@
 {
-      "name": "Emiko Robot",
+      "name": "Skyzu Robot",
       "description": "A Powerful  Telegram group management bot with anime theme.",
       "keywords": [
          "telegram",
@@ -9,7 +9,7 @@
          "naorobot"
       ],
     
-   "logo":    "https://telegra.ph/file/35e56ba7eace7332356ad.jpg",  
+   "logo":    "https://telegra.ph/file/56811b69cbcece20bbebf.jpg",  
    "repository": "https://github.com/Skyzu/SkyzuRobot",
    "addons": [
           {
