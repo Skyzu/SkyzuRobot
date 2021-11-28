@@ -122,14 +122,14 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Skyzu Robot ❤️](https://t.me/Skyzusupport):**
+**[Skyzu Robot ❤️](https://t.me/SkyzuRobot):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/excrybaby)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/skyzu)
 """
     answers.append(
         InlineQueryResultArticle(
