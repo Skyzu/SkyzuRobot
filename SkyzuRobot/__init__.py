@@ -163,7 +163,7 @@ else:
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     MONGO_DB_URI = Config.MONGO_DB_URI
     ARQ_API = Config.ARQ_API_KEY
-    ARQ_API_URL = https://grambuilders.tech
+    ARQ_API_URL = Config.ARQ_API_URL
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY
