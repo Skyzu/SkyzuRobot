@@ -2,11 +2,12 @@ import threading
 
 from SkyzuRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, Integer, UnicodeText
+from sqlalchemy.sql.sqltypes import BigInteger
 
 
 class UserInfo(BASE):
     __tablename__ = "userinfo"
-    user_id = Column(Integer, primary_key=True)
+    user_id = Column(BigInteger, primary_key=True)
     info = Column(UnicodeText)
 
     def __init__(self, user_id, info):
@@ -19,7 +20,7 @@ class UserInfo(BASE):
 
 class UserBio(BASE):
     __tablename__ = "userbio"
-    user_id = Column(Integer, primary_key=True)
+    user_id = ColumnBig(Integer, primary_key=True)
     bio = Column(UnicodeText)
 
     def __init__(self, user_id, bio):
