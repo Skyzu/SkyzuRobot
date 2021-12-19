@@ -19,7 +19,6 @@ from telethon.utils import is_image, is_video
 from SkyzuRobot.events import register as tomori
 
 
-
 @tomori(pattern="^/whatanime(.*)")
 async def whatanime(e):
     media = e.media

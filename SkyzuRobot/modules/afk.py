@@ -1,4 +1,3 @@
-
 import random, html
 
 from SkyzuRobot import dispatcher
