@@ -4,7 +4,8 @@ from typing import Union
 
 from SkyzuRobot.modules.helper_funcs.msg_types import Types
 from SkyzuRobot.modules.sql import BASE, SESSION
-from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
+from sqlalchemy.sql.sqltypes import BigInteger
 
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",  # Discord welcome messages copied
@@ -294,7 +295,7 @@ class WelcomeMute(BASE):
 
 class WelcomeMuteUsers(BASE):
     __tablename__ = "human_checks"
-    user_id = Column(Integer, primary_key=True)
+    user_id = Column(BigInteger, primary_key=True)
     chat_id = Column(String(14), primary_key=True)
     human_check = Column(Boolean)
 
