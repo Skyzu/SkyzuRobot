@@ -1,6 +1,7 @@
 import threading
 
 from sqlalchemy import String, Column, Integer, UnicodeText
+from sqlalchemy.sql.sqltypes import BigInteger
 
 from SkyzuRobot.modules.sql import SESSION, BASE
 
@@ -12,7 +13,7 @@ DEF_OBJ = (None, DEF_COUNT, DEF_LIMIT)
 class FloodControl(BASE):
     __tablename__ = "antiflood"
     chat_id = Column(String(14), primary_key=True)
-    user_id = Column(Integer)
+    user_id = Column(BigInteger)
     count = Column(Integer, default=DEF_COUNT)
     limit = Column(Integer, default=DEF_LIMIT)
 
