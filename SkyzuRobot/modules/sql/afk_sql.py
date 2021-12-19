@@ -2,12 +2,13 @@ import threading
 
 from SkyzuRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, UnicodeText
+from sqlalchemy.sql.sqltypes import BigInteger
 
 
 class AFK(BASE):
     __tablename__ = "afk_users"
 
-    user_id = Column(Integer, primary_key=True)
+    user_id = Column(BigInteger, primary_key=True)
     is_afk = Column(Boolean)
     reason = Column(UnicodeText)
 
