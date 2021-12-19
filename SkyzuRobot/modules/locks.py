@@ -12,7 +12,7 @@ from telegram.utils.helpers import mention_html
 import SkyzuRobot.modules.sql.locks_sql as sql
 from SkyzuRobot.modules.helper_funcs.decorators import Skyzucmd, Skyzumsg
 from SkyzuRobot.modules.sql.approve_sql import is_approved
-from SkyzuRobot import DRAGONS, log, dispatcher
+from SkyzuRobot import DRAGONS, LOGGER as log, dispatcher
 from SkyzuRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
