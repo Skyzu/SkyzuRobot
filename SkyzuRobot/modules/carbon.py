@@ -41,11 +41,11 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/Skyzu/SkyzuRobot"), 
-                    InlineKeyboardButton(
-                        "Support", url="https://t.me/skyzusupport")
+                        "Repo", url="https://github.com/Skyzu/SkyzuRobot"
+                    ),
+                    InlineKeyboardButton("Support", url="https://t.me/skyzusupport"),
                 ]
             ]
         ),
-        disable_web_page_preview=True
+        disable_web_page_preview=True,
     )

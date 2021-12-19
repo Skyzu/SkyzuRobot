@@ -9,6 +9,7 @@ from SkyzuRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 
 __mod_name__ = "Anti-NSFW​"
 
+
 async def get_file_id_from_message(message):
     file_id = None
     if message.document:
@@ -44,11 +45,11 @@ async def get_file_id_from_message(message):
 
 @pbot.on_message(
     (
-            filters.document
-            | filters.photo
-            | filters.sticker
-            | filters.animation
-            | filters.video
+        filters.document
+        | filters.photo
+        | filters.sticker
+        | filters.animation
+        | filters.video
     )
     & ~filters.private,
     group=8,
@@ -104,11 +105,11 @@ async def nsfw_scan_command(_, message):
         return
     reply = message.reply_to_message
     if (
-            not reply.document
-            and not reply.photo
-            and not reply.sticker
-            and not reply.animation
-            and not reply.video
+        not reply.document
+        and not reply.photo
+        and not reply.sticker
+        and not reply.animation
+        and not reply.video
     ):
         await message.reply_text(
             "Reply to an image/document/sticker/animation to scan it."
