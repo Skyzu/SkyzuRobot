@@ -1,6 +1,7 @@
 from time import perf_counter
 from functools import wraps
 from cachetools import TTLCache
+from SkyzuRobot.modules.sql.mod_sql import is_modd
 from threading import RLock
 from SkyzuRobot import (
     DEL_CMDS,
@@ -39,6 +40,7 @@ def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
         or user_id in DRAGONS
         or user_id in DEV_USERS
         or chat.all_members_are_administrators
+        or is_modd(chat.id, user_id)
         or user_id in [777000, 1087968824]
     ):  # Count telegram and Group Anonymous as admin
         return True
@@ -80,6 +82,7 @@ def is_user_ban_protected(chat: Chat, user_id: int, member: ChatMember = None) -
         or user_id in DRAGONS
         or user_id in DEV_USERS
         or user_id in WOLVES
+        or is_modd(chat.id, user_id)
         or user_id in TIGERS
         or chat.all_members_are_administrators
         or user_id in [777000, 1087968824]
