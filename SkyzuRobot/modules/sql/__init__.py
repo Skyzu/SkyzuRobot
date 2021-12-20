@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-from SkyZuRobot import DATABASE_URL, LOGGER
+from SkyzuRobot import DATABASE_URL, LOGGER
 
 
 def start() -> scoped_session:
