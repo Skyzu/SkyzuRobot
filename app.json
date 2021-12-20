@@ -100,12 +100,12 @@
         "required": false
      },
      "EVENT_LOGS": {
-         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-100'",
          "required": true,
          "value": "-1001626554919"
       },
       "ERROR_LOGS": {
-         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "description": "error logs channel to note down important bot errors events, make this public/private. ex: '-100'",
          "required": true,
          "value": ""
       },
