@@ -20,7 +20,7 @@ class UserInfo(BASE):
 
 class UserBio(BASE):
     __tablename__ = "userbio"
-    user_id = ColumnBig(Integer, primary_key=True)
+    user_id = Column(BigInteger, primary_key=True)
     bio = Column(UnicodeText)
 
     def __init__(self, user_id, bio):
