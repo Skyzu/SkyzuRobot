@@ -112,7 +112,7 @@ if ENV:
     CF_API_KEY = os.environ.get("CF_API_KEY", None)
     WELCOME_DELAY_KICK_SEC = os.environ.get("WELCOME_DELAY_KICL_SEC", None)
     BOT_ID = int(os.environ.get("BOT_ID", None))
-    ARQ_API_URL = "https://grambuilders.tech"
+    ARQ_API_URL = "https://thearq.tech"
     ARQ_API_KEY = ARQ_API
 
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
