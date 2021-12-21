@@ -13,7 +13,6 @@ from telegram.ext import (
     CallbackContext,
     Filters,
     CommandHandler,
-    run_async,
     CallbackQueryHandler,
 )
 from telegram.utils.helpers import mention_html
@@ -370,7 +369,7 @@ def punch(update: Update, context: CallbackContext) -> str:
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"{mention_html(member.user.id, html.escape(member.user.first_name))} [<code>{member.user.id}</code> Kicked.",
+            f"{mention_html(member.user.id, html.escape(member.user.first_name))} [<code>{member.user.id}</code>] Kicked.",
             parse_mode=ParseMode.HTML,
         )
         log = (
