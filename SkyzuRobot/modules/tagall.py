@@ -11,7 +11,7 @@ from SkyzuRobot import telethn as Client
 
 spam_chats = []
 
-@Client.on(events.NewMessage(pattern="^/all ?(.*)"))
+@Client.on(events.NewMessage(pattern="^@all ?(.*)"))
 async def mentionall(event):
   chat_id = event.chat_id
   if event.is_private:
@@ -60,7 +60,7 @@ async def mentionall(event):
       break
     usrnum += 1
     usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
-    if usrnum == 10:
+    if usrnum == 5:
       if mode == "text_on_cmd":
         txt = f"{usrtxt}\n\n{msg}"
         await Client.send_message(chat_id, txt)
