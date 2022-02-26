@@ -7,7 +7,7 @@
 <p align="center">Skyzu Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
-<a href="https://t.me/SkyzuRobot"> <img src="https://img.shields.io/badge/Skyzu-Robot-blue?&logo=telegram" alt="Skyzu on Telegram" /> </a><br>
+<a href="https://t.me/SkyzuShiraishiBot"> <img src="https://img.shields.io/badge/Skyzu-Robot-blue?&logo=telegram" alt="Skyzu on Telegram" /> </a><br>
 <a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.8.1-white?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a><br>
 <a href="https://docs.telethon.dev"> <img src="https://img.shields.io/badge/Telethon-1.23.0-red?&style=flat-round&logo=github" alt="Telethon" /> </a>
