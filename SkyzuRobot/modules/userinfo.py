@@ -201,7 +201,6 @@ def get_id(update: Update, context: CallbackContext):
             )
 
 
-
 @telethn.on(
     events.NewMessage(
         pattern="/ginfo ",
