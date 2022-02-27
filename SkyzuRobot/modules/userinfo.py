@@ -148,43 +148,58 @@ def make_bar(per):
 def get_id(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
     message = update.effective_message
-    chat = update.effective_chat
-    msg = update.effective_message
-    user_id = extract_user(msg, args)
+    user_id = extract_user(message, args)
 
-    if user_id:
-
-        if msg.reply_to_message and msg.reply_to_message.forward_from:
-
+    if user_id and user_id != "error":
+        if message.reply_to_message and message.reply_to_message.forward_from:
             user1 = message.reply_to_message.from_user
             user2 = message.reply_to_message.forward_from
+            text = f"× {escape_markdown(user2.first_name)} id is <code>{user2.id}</code>.\n× {escape_markdown(user1.first_name)} id is <code>{user1.id}</code>."
 
-            msg.reply_text(
-                f"<b>Telegram ID:</b>\n"
-                f"• {html.escape(user2.first_name)} - <code>{user2.id}</code>.\n"
-                f"• {html.escape(user1.first_name)} - <code>{user1.id}</code>.",
+            if message.chat.type != "private":
+                text += f"\n× This group's id is <code>{message.chat.id}</code>."
+
+            send_message(message, text, parse_mode=ParseMode.HTML)
+        else:
+            user = bot.get_chat(user_id)
+            text = f"× {escape_markdown(user.first_name)} id is <code>{user.id}</code>."
+
+            if message.chat.type != "private":
+                text += f"\n× This group's id is <code>{message.chat.id}</code>."
+
+            send_message(message, text, parse_mode=ParseMode.HTML)
+
+    elif user_id == "error":
+        try:
+            user = bot.get_chat(args[0])
+        except BadRequest:
+            send_message(message, "Error: Unknown user/chat!")
+            return
+
+        text = f"× Your id is <code>{message.from_user.id}</code>."
+
+        text += f"\n× This group's id is <code>{user.id}</code>."
+
+        if message.chat.type != "private":
+            text += f"\n× This group's id is <code>{message.chat.id}</code>."
+
+        send_message(message, text, parse_mode=ParseMode.HTML)
+    else:
+        chat = update.effective_chat
+        if chat.type == "private":
+            send_message(
+                message,
+                f"Your id is <code>{message.from_user.id}</code>.",
                 parse_mode=ParseMode.HTML,
             )
 
         else:
-
-            user = bot.get_chat(user_id)
-            msg.reply_text(
-                f"{html.escape(user.first_name)}'s id is <code>{user.id}</code>.",
+            send_message(
+                message,
+                f"× Your id is <code>{message.from_user.id}</code>.\n× This group's id is <code>{chat.id}</code>.",
                 parse_mode=ParseMode.HTML,
             )
 
-    elif chat.type == "private":
-        msg.reply_text(
-            f"Your id is <code>{chat.id}</code>.",
-            parse_mode=ParseMode.HTML,
-        )
-
-    else:
-        msg.reply_text(
-            f"This group's id is <code>{chat.id}</code>.",
-            parse_mode=ParseMode.HTML,
-        )
 
 
 @telethn.on(
