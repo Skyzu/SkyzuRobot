@@ -51,7 +51,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "2088106582"
+         "value": "2116587637"
      },
 
       "STRING_SESSION": {
@@ -79,7 +79,7 @@
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "skyzu"
+         "value": "xflskyzu"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
@@ -134,7 +134,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": ""
+         "value": "2116587637"
      },
         "ARQ_API": {
             "description": "Get this from @ARQRobot.",
