@@ -29,7 +29,7 @@ motor==2.5.1
 multicolorcaptcha==1.2.0
 nekos.py==1.1.0
 nltk==3.7
-numpy==1.22.3
+numpy==1.22.4
 Pillow==9.1.1
 pretty-errors==1.2.25
 psutil==5.9.0
