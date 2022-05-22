@@ -1,7 +1,7 @@
 aiofiles==0.6.0
 aiohttp==3.8.1
 alphabet-detector==0.0.7
-APScheduler==3.6.3
+APScheduler==3.9.1
 beautifulsoup4==4.11.1
 bleach==4.1.0
 bs4==0.0.1
