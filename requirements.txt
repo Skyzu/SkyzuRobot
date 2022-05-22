@@ -35,7 +35,7 @@ pretty-errors==1.2.25
 psutil==5.9.0
 psycopg2-binary==2.9.3
 pykeyboard==0.1.5
-pymongo==3.12.3
+pymongo==4.1.1
 pyrate-limiter==2.8.1
 Pyrogram==1.4.16
 PySocks==1.7.1
