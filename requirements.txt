@@ -18,7 +18,7 @@ GitPython==3.1.27
 gpytranslate==1.4.0
 gTTS==2.2.4
 heroku3==5.1.4
-httpx==0.22.0
+httpx==0.23.0
 hurry.filesize==0.9
 importlib-metadata==1.5.0
 jikanpy==4.3.2
