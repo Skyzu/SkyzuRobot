@@ -39,7 +39,7 @@ pymongo==3.12.3
 pyrate-limiter==2.8.1
 Pyrogram==1.4.16
 PySocks==1.7.1
-python-telegram-bot==13.11
+python-telegram-bot==13.12
 pendulum
 pytimeparse==1.1.8
 pytz==2022.1
