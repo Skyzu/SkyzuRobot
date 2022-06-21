@@ -8,7 +8,7 @@ bs4==0.0.1
 cachetools==4.2.2
 cloudscraper==1.2.60
 covid==2.5.2
-cryptography==2.8
+cryptography==37.0.3
 dnspython==2.2.1
 emoji==1.7.0
 ez-setup==0.9
