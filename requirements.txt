@@ -3,7 +3,7 @@ aiohttp==3.8.1
 alphabet-detector==0.0.7
 APScheduler==3.6.3
 beautifulsoup4==4.11.1
-bleach==4.1.0
+bleach==5.0.1
 bs4==0.0.1
 cachetools==4.2.2
 cloudscraper==1.2.60
