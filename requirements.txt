@@ -63,4 +63,4 @@ wget==3.2
 wikipedia==1.4.0
 youtube-search==2.1.0
 youtube-search-python==1.6.5
-yt-dlp==2022.4.8
+yt-dlp==2022.6.29
