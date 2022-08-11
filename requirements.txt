@@ -37,7 +37,7 @@ psycopg2-binary==2.9.3
 pykeyboard==0.1.5
 pymongo==3.12.3
 pyrate-limiter==2.8.1
-Pyrogram==1.4.16
+Pyrogram==2.0.36
 PySocks==1.7.1
 python-telegram-bot==13.11
 pendulum
