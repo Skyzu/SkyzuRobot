@@ -50,7 +50,7 @@ requests==2.27.1
 search-engine-parser==0.6.1
 spamwatch==0.3.0
 speedtest-cli==2.1.3
-SQLAlchemy==1.4.36
+SQLAlchemy==1.4.41
 telegraph==2.1.0
 Telethon==1.24.0
 TgCrypto==1.2.3
