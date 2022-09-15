@@ -58,7 +58,7 @@ tornado==6.1
 tracemoepy==4.1
 tzdata==2022.1
 tzlocal==4.2
-ujson==5.2.0
+ujson==5.5.0
 wget==3.2
 wikipedia==1.4.0
 youtube-search==2.1.0
