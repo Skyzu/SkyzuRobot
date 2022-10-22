@@ -80,8 +80,6 @@ if ENV:
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get("API_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
-    SESSION_STRING = os.environ.get("SESSION_STRING", None)
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DATABASE_URL = os.environ.get("DATABASE_URL", None)
     DATABASE_URL = DATABASE_URL.replace(
         "postgres", "postgresql"
@@ -189,10 +187,8 @@ else:
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
-    SESSION_STRING = Config.SESSION_STRING
     INFOPIC = Config.INFOPIC
     BOT_USERNAME = Config.BOT_USERNAME
-    STRING_SESSION = Config.STRING_SESSION
     LASTFM_API_KEY = Config.LASTFM_API_KEY
     CF_API_KEY = Config.CF_API_KEY
 
@@ -231,11 +227,11 @@ aiohttpsession = ClientSession()
 print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
-ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+ubot2 = TelegramClient("Skyzu", API_ID, API_HASH, TOKEN)
 try:
     ubot2.start()
 except BaseException:
-    print("Userbot Error ! Have you added a STRING_SESSION in deploying??")
+    print("Error !")
     sys.exit(1)
 
 pbot = Client(
