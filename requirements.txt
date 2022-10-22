@@ -3,7 +3,7 @@ aiogram
 aiohttp[speedups]
 aioredis
 alphabet_detector
-APScheduler~=3.6.3
+APScheduler~=3.9.1
 beautifulsoup4==4.9.1
 better_profanity
 bing_image_downloader
