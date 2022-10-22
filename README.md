@@ -2,7 +2,7 @@
   <img src="https://telegra.ph/file/56811b69cbcece20bbebf.jpg">
 </p>
 
-<h4><p align="center"> SKYZU ROBOT </p></h4>
+<h1><p align="center"> SKYZU ROBOT </p></h1>
 
 <p align="center">Skyzu Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
