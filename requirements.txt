@@ -37,9 +37,10 @@ psycopg2-binary==2.9.3
 pykeyboard==0.1.5
 pymongo==3.12.3
 pyrate-limiter==2.8.1
-Pyrogram==1.4.16
+Pyrogram==2.0.52
 PySocks==1.7.1
 python-telegram-bot==13.11
+python-arq
 pendulum
 pytimeparse==1.1.8
 pytz==2022.1
@@ -64,4 +65,3 @@ wikipedia==1.4.0
 youtube-search==2.1.0
 youtube-search-python==1.6.5
 yt-dlp==2022.4.8
-Python_ARQ
