@@ -45,7 +45,7 @@ pyrogram==2.0.52
 python-telegram-bot==13.11
 pendulum
 pytimeparse==1.1.8
-pytz==2022.1
+pytz==2022.5
 PyYAML==5.3.1
 redis==4.3.1
 regex==2022.4.24
