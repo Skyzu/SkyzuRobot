@@ -10,7 +10,7 @@ cloudscraper
 covid
 cryptography>=3.3.2
 dnspython
-emoji==1.7.0
+emoji==2.2.0
 ez-setup==0.9
 ffmpeg-python
 future
