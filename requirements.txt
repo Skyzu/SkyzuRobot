@@ -36,7 +36,7 @@ pretty-errors
 psutil
 psycopg2-binary
 pykeyboard
-pymongo==3.12.3
+pymongo==4.3.3
 pyrate-limiter
 pyrogram==2.0.52
 python-arq
