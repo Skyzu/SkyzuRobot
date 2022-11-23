@@ -47,7 +47,7 @@ pendulum
 pytimeparse==1.1.8
 pytz==2022.1
 PyYAML==5.3.1
-redis==4.3.1
+redis==4.3.5
 regex==2022.4.24
 requests==2.27.1
 search-engine-parser==0.6.1
