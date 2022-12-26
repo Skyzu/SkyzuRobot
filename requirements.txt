@@ -38,10 +38,10 @@ psycopg2-binary
 pykeyboard
 pymongo==3.12.3
 pyrate-limiter
-pyrogram==2.0.52
+pyrogram==2.0.83
 python-arq
 PySocks==1.7.1
-pyrogram==2.0.52
+pyrogram==2.0.83
 python-telegram-bot==13.11
 pendulum
 pytimeparse==1.1.8
