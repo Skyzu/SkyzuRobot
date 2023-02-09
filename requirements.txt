@@ -42,7 +42,7 @@ pyrogram==2.0.52
 python-arq
 PySocks==1.7.1
 pyrogram==2.0.52
-python-telegram-bot==13.11
+python-telegram-bot==20.1
 pendulum
 pytimeparse==1.1.8
 pytz==2022.1
